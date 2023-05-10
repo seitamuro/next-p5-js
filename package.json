@@ -6,7 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "yarn lint --fix",
+    "prettier": "prettier -l \"./src/**/*.{js,jsx,ts,tsx,json,css,scss}\"",
+    "prettier:fix": "yarn prettier --write",
+    "format": "yarn lint && yarn prettier",
+    "format:fix": "yarn lint:fix && yarn prettier:fix",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "yarn format"
+    ]
   },
   "dependencies": {
     "@types/node": "20.1.2",
@@ -19,5 +30,9 @@
     "react-dom": "18.2.0",
     "react-p5": "^1.3.35",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8"
   }
 }
