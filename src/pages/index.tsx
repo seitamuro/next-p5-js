@@ -5,7 +5,8 @@ import SketchComponent from "@/components/sketch";
 export default function Home() {
   return (
     <>
-      <Box>
+      <Box>てすと</Box>
+      <Box rounded="md" maxWidth="100">
         <SketchComponent />
       </Box>
     </>

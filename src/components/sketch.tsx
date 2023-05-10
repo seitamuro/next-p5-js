@@ -12,7 +12,7 @@ export const SketchComponent = () => {
   };
 
   const setup = (p5: p5Types, canvasParentRef: Element) => {
-    p5.createCanvas(p5.windowWidth, p5.windowHeight).parent(canvasParentRef);
+    //p5.createCanvas(p5.windowWidth, p5.windowHeight).parent(canvasParentRef);
     p5.colorMode(p5.HSB, p5.width, p5.height, 100);
     p5.noStroke();
   };
