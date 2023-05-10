@@ -34,14 +34,7 @@ export const SketchComponent = () => {
     p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
   };
 
-  return (
-    <Sketch
-      preload={preload}
-      setup={setup}
-      draw={draw}
-      windowResized={windowResized}
-    />
-  );
+  return <Sketch preload={preload} setup={setup} draw={draw} windowResized={windowResized} />;
 };
 
 export default SketchComponent;

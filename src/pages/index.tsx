@@ -1,9 +1,9 @@
-import SketchComponent from "@/components/sketch"
+import SketchComponent from "@/components/sketch";
 
 export default function Home() {
   return (
     <>
       <SketchComponent />
     </>
-  )
+  );
 }
